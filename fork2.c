@@ -30,7 +30,7 @@ void codeDuProcessusParent(void)
 /// @param aucun
 void codeDuProcessusEnfant(void)
 {
-    processusPereOuFils = "Processus Fils";
+    //processusPereOuFils = "Processus Fils";
     sleep(2);
     printf("Je suis %s\n", processusPereOuFils);
 }
@@ -43,10 +43,16 @@ int main()
     pid = fork();
 
     // Appel fonction Enfant
-
+    if(pid == 0)
+    {
+        codeDuProcessusEnfant();
+    }
 
     // Appel fonction Parent
-
-    
+    else
+    {
+        codeDuProcessusParent();
+        wait(NULL);
+    }
     return 0;
 }

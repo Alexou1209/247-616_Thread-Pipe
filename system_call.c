@@ -13,9 +13,9 @@
 
 /**
  * Écrit processus 1 sur le terminal 
- * Attend 10ms
+ * Attend 10s
  * Écrit processus 3 sur le terminal
- * Attend 5ms
+ * Attend 5s
  * Écrit processus  sur le terminal
  * @return     0 
  */
