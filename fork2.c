@@ -30,7 +30,7 @@ void codeDuProcessusParent(void)
 /// @param aucun
 void codeDuProcessusEnfant(void)
 {
-    //processusPereOuFils = "Processus Fils";
+    processusPereOuFils = "Processus Fils";
     sleep(2);
     printf("Je suis %s\n", processusPereOuFils);
 }
